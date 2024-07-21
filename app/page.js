@@ -29,15 +29,13 @@ export default function Home() {
 }, [showState]);
 
   return (
-    <div className="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950
-      bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
-      dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
-    <nav className="grid column-300 bg-white">
+    <div>
+    <nav className="w-100vh grid column-300 bg-white">
       <div className=" text-gray-700 h-min">
         <h1 className={` ${bebas_Neue.className} text-3xl justify-center mr-4 pl-6 flex my-5 `}>Keinner Vera</h1>  
       </div>
       <div className="m-0 p-0 ">
-        <div className="h-full w-full">
+        <div className="h-full w-full bg-white">
         <div className={`${roboto.className} flex-row text-2xl mb-5 text-center pt-5`}>
           <a className="pr-10 hover:animate-pulse" onClick={()=>{setShowState(false)}} href={"#"}>Home</a>
           <a className="pr-10 hover:animate-pulse" onClick={()=>{setShowState(true);
@@ -52,8 +50,8 @@ export default function Home() {
     <main>
       {showState ?
       <>  
-        <div className={`${transitionState} transition-opacity duration-500 ease-in-out h-screen m-auto`}>
-          <h5 className={`${roboto.className} text-white pt-10 text-center text-4xl`}>Proyectos</h5>
+        <div className={`${transitionState} transition-opacity duration-500 ease-in-out h-screen w-100vh m-auto`}>
+          <h5 className={`${roboto.className} sm:w-100vh text-white pt-10 text-center text-4xl`}>Proyectos</h5>
           <div className="flex py-20 px-32">
             <div className="w-96 h-min text-white border-t-2 border-white">
               <p className="text-center p-2 text-lg font-semibold">Sistema de notas</p>

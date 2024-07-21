@@ -38,4 +38,10 @@
 .h-70vh{
     height: 70vh;
 }
+@media (max-width: 640px) {
+  .w-100vh{
+    min-width: 100vh !important;
+  }
+}
+
   

@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
+import "../globals.css";
 
 const Typewriter = () => {
   const [text, setText] = useState('');
@@ -17,7 +18,7 @@ const Typewriter = () => {
     }, 100);
   }, []);
 
-  return <h1 className="flex justify-center my-10 text-4xl h-screen pt-60 pl-2 text-white">{text}</h1>;
+  return <h1 className="flex justify-center my-10 text-4xl h-screen w-100vh pt-60 pl-20 text-white">{text}</h1>;
 };
 
 export default Typewriter;
