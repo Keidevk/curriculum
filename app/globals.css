@@ -40,7 +40,7 @@
 }
 @media (max-width: 640px) {
   .w-100vh{
-    min-width: 100vh !important;
+    min-width: 100% !important;
   }
 }
 
