@@ -17,8 +17,13 @@ const Typewriter = () => {
       }
     }, 100);
   }, []);
-
-  return <h1 className="relative sm:flex sm:justify-center my-10 sm:text-4xl text-6xl pl-40 w-100vh pt-60 sm:pl-20 text-white">{text}</h1>;
+  //relative sm:flex sm:justify-center my-10 sm:text-4xl text-6xl pl-40 w-100vh pt-60 sm:pl-20 text-white
+  return (
+  <>
+  <div className='w-screen text-center text-3xl sm:text-7xl pt-20 sm:pt-60'>
+    <h1 className="text-white">{text}</h1>
+  </div>
+  </>)
 };
 
 export default Typewriter;

@@ -1,20 +1,21 @@
 import Image from "next/image"
-import { useEffect } from "react"
 export default function Proyects({id,textContent,text,img}){
-    
+
     return(
         <>
-            <div className="ms:my-0 mt-0 mb-12 mx-3 w-96 h-min text-white border-t-2 border-white">
-              <p className="text-center p-2 text-6xl sm:text-lg font-semibold">{text}</p>
-              <Image id={id} className="justify-center transition-transform duration-300" src={img} alt="Nodemaster" width={400} height={200} onClick={()=>{
-                const img = document.getElementById(`${id}`)
-                if(img.style.transform != "scale(1.9)"){
-                  img.style.transform = "scale(1.9)"  
-                }else{
-                  img.style.transform = "scale(1)"
+            <div className="text-white border-y-2 mb-5 mx-5 sm:w-1/2 ">
+              <p className=" text-center font-semibold text-xl sm:text-4xl sm:py-4">{text}</p>
+              <Image id={id} className="m-auto transition-transform duration-300" src={img} alt="Nodemaster" width={300} height={100} onClick={()=>{
+                if(window.screen.availWidth>1024){
+                  const img = document.getElementById(`${id}`)
+                  if(img.style.transform != "scale(1.9)"){
+                    img.style.transform = "scale(1.9)"  
+                  }else{
+                    img.style.transform = "scale(1)"
+                  }
                 }
               }}/>
-              <p className="text-3xl sm:text-lg pb-2 border-b-2 border-white">{textContent}</p>
+              <p className="pt-2 sm:pt-4 mb-4">{textContent}</p>
             </div>
         </>
     )

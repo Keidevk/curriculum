@@ -2,19 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.column-300{
-    grid-template-columns: 300px 1fr;
-}
-.text-hsl{
-    color:hsl(316, 30%, 36%) !important;
-}
-.bg-hsl{
-  background: linear-gradient(135deg, #718096, #63b3ed) !important;
+.row-min-content{
+  grid-template-rows: min-content;
 }
 .animate-typewriter {
     border-right: .15em solid #000;
     animation: blink 1s steps(1) infinite;
-  }
+}
   @keyframes blink {
     50% {
       border-color: transparent;
@@ -35,13 +29,5 @@
       width: max-content;
     }
   }
-.h-70vh{
-    height: 70vh;
-}
-@media (max-width: 640px) {
-  .w-100vh{
-    min-width: 100% !important;
-  }
-}
 
   

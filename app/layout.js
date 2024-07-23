@@ -12,7 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={`${inter} bg-gray-950 h-screen bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] ${inter.className}`}>{children}</body>
+      <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body className={`${inter} grid grid-row-2 row-min-content bg-gray-950 h-screen bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]`}>{children}</body>
     </html>
   );
 }
