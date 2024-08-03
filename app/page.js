@@ -3,6 +3,7 @@ import {useState, useEffect, useRef} from "react";
 import Typewriter from "./components/typewrite";
 import Nav from "./components/nav.component";
 import Proyects from "./components/proyect.component";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -33,6 +34,9 @@ export default function Home() {
         </div>
       </div>
         </>:<Typewriter/>}
+      <footer className="text-base text-white flex items-end ">
+        <Link href="https://github.com/Keidevk">©2024 Keinner Vera GitHub</Link>
+      </footer>
     </>
   );
 }
