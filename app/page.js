@@ -31,6 +31,13 @@ export default function Home() {
           id={"ats"}
           trasitionProp={transitionState}
           img={"/Screenshot 2024-07-22 151931.png"}/>
+        <Proyects
+          text={"Reciclaje"}
+          textContent={"Este proyecto es una pagina web realizada para la campaña ambientalista de mi universidad con el fin de que los estudiantes conozcan las ventajas del reciclaje en la universidad y su vida diaria."}
+          id={"recycle"}
+          trasitionProp={transitionState}
+          img={"/Screenshot 2024-08-05 235214.png"}
+        /> 
         </div>
       </div>
         </>:<Typewriter/>}
