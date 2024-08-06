@@ -9,6 +9,7 @@ Tengo 4 años de trayectoria estudiando nuevas tecnologías y estoy por mi prime
 * Typescript
 * ReactJs
 * Nextjs
+* Angular
 * Tailwind 
 * Bootstrap
 * MongoDB
