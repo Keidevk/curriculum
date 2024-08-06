@@ -21,6 +21,3 @@ Tengo 4 años de trayectoria estudiando nuevas tecnologías y estoy por mi prime
 * Nodejs
 * Express
 * Nestjs
-
-
-## Nota:La version mobile aún no está terminada
