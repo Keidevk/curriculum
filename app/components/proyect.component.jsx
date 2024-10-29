@@ -15,7 +15,7 @@ export default function Proyects({id,textContent,text,img}){
                   }
                 }
               }}/>
-              <p className="pt-2 sm:pt-4 mb-4">{textContent}</p>
+              <p className="text-xl pt-2 sm:pt-4 mb-4">{textContent}</p>
             </div>
         </>
     )
