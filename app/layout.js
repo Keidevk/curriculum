@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
         {children}
         <footer className="text-base text-white flex items-end ">
           <Link href="https://github.com/Keidevk">©2024 Keinner Vera GitHub</Link>
+          <Link className="mx-2" href="https://www.linkedin.com/in/keinner-vera-092529203">Linkedin</Link>
         </footer>
       </body>
     </html>
